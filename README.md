@@ -39,6 +39,28 @@ Babel 是一个 JavaScript 编译器，可以支持各类语法；
 npm install @babel/core @babel/preset-env @babel/preset-react babel-loader
 ```
 
+4、配置less
+
+安装必要依赖
+```
+npm install less-loader css-loader style-loader less --save-dev
+```
+
+在webpack里增加对应的loader
+```
+ {
+      test: /\.less$/,
+      use: [
+              'style-loader',
+              'css-loader',
+              'less-loader'
+            ],          
+
+ }
+
+```
+
+
 
 
 

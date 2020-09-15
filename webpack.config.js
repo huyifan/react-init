@@ -9,14 +9,25 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist')
     },
+
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /(\.jsx|\.js)$/,
                 exclude: /node_modules/,
                 use: {
                     loader: "babel-loader"
-                }
+                },
+
+            },
+            {
+                test: /\.less$/,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'less-loader'
+                ],
+
             },
             {
                 test: /\.html$/,
@@ -32,4 +43,3 @@ module.exports = {
         })
     ]
 }
-;
