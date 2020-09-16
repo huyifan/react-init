@@ -5,11 +5,25 @@
 本文参考了如下内容，搭建了基本的react应用框架：
 
 [如何从零开始创建React项目（三种方式）](https://www.jianshu.com/p/68e849768d8e)
+
+
 [从零开始react项目构建](https://www.jianshu.com/p/ccdb52ac6a41)
 
+# 分支介绍
 
-# 步骤
-##一、安装阶段
+| 分支  | 内容 |
+| ----   | :---- |
+| master  | 使用webpack搭建react |
+|antd  | 在master的基础上，引入antd框架 |
+|router  | 在antd的基础上，引入路由相关配置 |
+|redux  | 在上分支的基础上，引入redux相关配置 |
+
+
+
+router
+
+# 内容
+## 一、webpack
 
 1、安装react依赖
 主要安装的库react，react-dom
@@ -59,7 +73,13 @@ npm install less-loader css-loader style-loader less --save-dev
  }
 
 ```
+## 二、antd
+ 
+ [官网文档](https://ant.design/docs/react/introduce-cn)
+ 
+ 引入antd
 
+## 三、引入react-router实现路由跳转
 
 
 
